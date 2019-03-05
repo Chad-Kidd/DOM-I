@@ -90,6 +90,7 @@ footerInfo.textContent = siteContent["footer"]["copyright"];
 //try this out maybe
 // let h4weird = document.querySelectorAll("h4:nth-child(1)")
 
+//working with event listeners
 // Click Event Listner
 const button = document.querySelector('button');
 
