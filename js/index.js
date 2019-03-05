@@ -89,3 +89,12 @@ footerInfo.textContent = siteContent["footer"]["copyright"];
 
 //try this out maybe
 // let h4weird = document.querySelectorAll("h4:nth-child(1)")
+
+// Click Event Listner
+const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Click count: ${event.detail}`;
+  event.target.style.backgroundColor = 'deepskyblue';
+  //used .target to change to red 
+});
