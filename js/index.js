@@ -39,7 +39,15 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//IMAGES HEADER LOGO
+let headerLogo = document.getElementById("cta-img");
+headerLogo.setAttribute('src', siteContent["cta"]["img-src"]);
+//MIDDLE IMAGE
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
 
 //NAV
 const anchorItems = document.querySelectorAll('a');
@@ -50,18 +58,34 @@ for (let i = 0; i < anchText.length; i++) {
   anchText[i].style.color = "crimson";
 }
 
+
 //HEADER TEXT
 const cta = document.querySelector('.cta-text h1');
 cta.textContent = siteContent["cta"]["h1"];
+
 
 //BUTTON
 const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
 
+
 //TOP CONTENT
-const topContent = document.querySelector('.text-content p');
-topContent.textContent = siteContent["main-content"]["features-content"];
+//FIRST H4
+const topContent = document.querySelector('.text-content h4');
+topContent.textContent = siteContent["main-content"]["features-h4"];
+//FIRST P TAG
+// const topContent = document.querySelector('.text-content p');
+// topContent.textContent = siteContent["main-content"]["features-content"];
+
+
+//CONTACT 
+const contactInfo = document.querySelector(".contact");
+contactInfo.textContent = siteContent["contact"]["contact-h4"];
+
 
 //FOOTER
 const footerInfo = document.querySelector("footer p");
 footerInfo.textContent = siteContent["footer"]["copyright"];
+
+//try this out maybe
+// let h4weird = document.querySelectorAll("h4:nth-child(1)")
